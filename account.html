@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="logo"><div class="mark">S</div><div>Shoply</div></div>
+    <div class="searchbar"><input placeholder="Search..."></div>
+    <nav class="nav"><a href="index.html">Home</a><a href="category.html">Category</a></nav>
+  </header>
+
+  <main class="container" style="padding:28px 0">
+    <div style="display:grid;grid-template-columns:1fr 420px;gap:18px">
+      <section>
+        <h2>Your Profile</h2>
+        <div class="card" style="margin-top:12px">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:80px;height:80px;border-radius:18px;background:var(--glass);display:grid;place-items:center">Z</div>
+            <div>
+              <div style="font-weight:700">Zaid Bin Naveed</div>
+              <div class="small text-muted">zaidbinnaveed04@gmail.com</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <h4 style="margin:0 0 8px">Recent Orders</h4>
+            <div class="small text-muted">#20251234 • PKR 4,250 • Delivered</div>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h4>Sign in / Register</h4>
+          <form style="margin-top:12px" data-validate>
+            <input required class="input" placeholder="Email" type="email">
+            <input required class="input" placeholder="Password" type="password" style="margin-top:8px">
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <button type="submit" class="cta">Sign in</button>
+              <a class="icon-btn" href="#">?</a>
+            </div>
+            <div style="margin-top:10px" class="small text-muted">No account? <a href="#" style="color:inherit">Register</a></div>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container footer"><div class="small">&copy; 2025 Shoply</div></footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Product</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="logo"><div class="mark">S</div><div>Shoply</div></div>
+    <div class="searchbar"><input placeholder="Search..."></div>
+    <nav class="nav"><a href="index.html">Home</a><a href="category.html">Category</a><a href="cart.html">Cart</a></nav>
+  </header>
+
+  <main class="container" style="padding:24px 0">
+    <div class="product-page">
+      <div class="gallery card">
+        <img src="https://picsum.photos/seed/prodmain/800/520" alt="Main product" class="main-image" style="border-radius:10px">
+        <div class="thumbs">
+          <img src="https://picsum.photos/seed/prod1/120/80" class="active" alt="">
+          <img src="https://picsum.photos/seed/prod2/120/80" alt="">
+          <img src="https://picsum.photos/seed/prod3/120/80" alt="">
+        </div>
+      </div>
+
+      <div class="product-info card">
+        <div class="badge">Best Seller</div>
+        <h2>Urban Wireless Headphones</h2>
+        <div class="small text-muted" style="margin-top:8px">Brand: NeoAudio</div>
+        <div style="margin-top:12px" class="price">PKR 18,200</div>
+
+        <p class="text-muted" style="margin:14px 0">Lightweight, long battery life, clean sound. Designed with recycled materials and a minimalist aesthetic.</p>
+
+        <form action="cart.html" method="GET" style="display:flex;gap:12px;align-items:center">
+          <div class="qty">
+            <button type="button" class="dec">-</button>
+            <input type="number" value="1" min="1" class="input" style="width:64px;text-align:center">
+            <button type="button" class="inc">+</button>
+          </div>
+
+          <button class="cta" type="submit">Add to Cart</button>
+        </form>
+
+        <section style="margin-top:18px">
+          <h4 style="margin:0 0 8px">Details</h4>
+          <ul class="text-muted" style="margin:0;padding-left:18px">
+            <li>Bluetooth 5.3</li>
+            <li>40 hour battery life</li>
+            <li>Fast charge: 10min = 6 hours</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <div class="small">&copy; 2025 Shoply</div>
+    <div class="row text-muted"><div>Shipping</div><div>Returns</div></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

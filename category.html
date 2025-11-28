@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Category</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="logo"><div class="mark">S</div><div>Shoply</div></div>
+    <div class="searchbar"><input placeholder="Search in category..."></div>
+    <nav class="nav"><a href="index.html">Home</a><a href="category.html">Category</a><a href="cart.html">Cart</a></nav>
+  </header>
+
+  <main class="container" style="padding:28px 0">
+    <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap">
+      <aside style="width:260px" class="card">
+        <h4>Filters</h4>
+        <div style="margin-top:12px">
+          <label class="small text-muted">Price</label>
+          <div style="display:flex;gap:8px;margin-top:8px"><input class="input" placeholder="Price"></div>
+        </div>
+        <div style="margin-top:12px">
+          <label class="small text-muted">Brand</label>
+          <select class="input"><option>All</option><option>Brand A</option><option>Brand B</option></select>
+        </div>
+      </aside>
+
+      <section style="flex:1">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <h2 style="margin:0">Headphones</h2>
+          <div class="small text-muted">Sort: <select class="input" style="width:160px;display:inline-block"><option>Popular</option><option>Newest</option><option>Price: Low to High</option></select></div>
+        </div>
+
+        <div class="grid cols-4">
+          <!-- repeat product cards -->
+          <a class="product-card" href="product.html">
+            <img src="https://picsum.photos/seed/g1/420/280" alt="Product">
+            <div style="margin-top:10px"><div class="small text-muted">Brand X</div><div class="price">PKR 18,200</div></div>
+          </a>
+
+          <a class="product-card" href="product.html">
+            <img src="https://picsum.photos/seed/g2/420/280" alt="Product">
+            <div style="margin-top:10px"><div class="small text-muted">Brand Y</div><div class="price">PKR 9,800</div></div>
+          </a>
+
+          <a class="product-card" href="product.html">
+            <img src="https://picsum.photos/seed/g3/420/280" alt="Product">
+            <div style="margin-top:10px"><div class="small text-muted">Brand Z</div><div class="price">PKR 12,400</div></div>
+          </a>
+
+          <a class="product-card" href="product.html">
+            <img src="https://picsum.photos/seed/g4/420/280" alt="Product">
+            <div style="margin-top:10px"><div class="small text-muted">Brand K</div><div class="price">PKR 5,600</div></div>
+          </a>
+          <!-- add more cards as needed -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <div class="small">&copy; 2025 Shoply</div>
+    <div class="row text-muted"><div>Help</div><div>Contact</div></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
